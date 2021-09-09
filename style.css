@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(-45deg, #003ace, #00aeff, #00feff, #00feff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    font-family: "Muli", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 50px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.project-section-header {
+    text-shadow: 1px 1px 2px #ffffff;
+    font-weight: bold;
+    font-size: 2rem;
+}
+#projects-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1020px;
+}
+
+.project-div {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    max-width: 300px;
+    transition: 0.3s ease;
+    box-shadow: 1px 1px 6px rgb(80, 1, 1);
+}
+
+.project-div a {
+    text-decoration: none;
+    color: rgb(80, 1, 1);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project-div:hover {
+    background-color: #0abb36;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgb(196, 199, 28);
+}
+
+.project-image {
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.code {
+    color: #007728;
+    transition: color 0.3s ease-out;
+}
+.project-div:hover .code {
+    color: yellow;
+}
+
+.project-title {
+    margin: 1rem 0;
+    font-size: 1.05rem;
+    padding: 0;
+}
+
+footer {
+    background-color: rgb(5, 76, 114);
+    color: #f5f5f5;
+    padding: 0.8rem;
+    font-size: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: rgb(0, 255, 187);
+}
+footer a:hover {
+    color: yellow;
+}
+
+@media (max-width: 28.75em) {
+    footer {
+      font-size: 55%;
+      justify-content: center;
+      width: 100%;
+    }
+  }

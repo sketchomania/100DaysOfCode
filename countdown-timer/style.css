@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/countdown-timer/Lighthouse.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   
+  min-height: 100vh;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-weight: normal;
+  margin-top: 5rem;
+  font-size: 4rem;
+}
+
+.countdown-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.big-text {
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 1rem 2rem;
+}
+
+.ctdn-el  {
+  text-align: center;
+}
+
+.ctdn-el span {
+  font-size: 1.4rem;
+}

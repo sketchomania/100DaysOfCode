@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0px;
+  font-size: 175%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  background-color: #fff;
+}
+h1 {
+
+  margin-bottom: 0;
+  text-shadow: 5px 5px 7px whitesmoke;
+}
+p {
+  font-size: 90%;
+  margin: 4px;
+}
+#img-div {
+  background-color: purple;
+  border: 4px solid yellow;
+  border-radius: 10px;
+  background: #cc81df;
+  padding: 10px;
+  margin: 0px;
+}
+#image {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 5px 5px 7px tomato;
+}
+#img-caption {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-shadow: 5px 5px 7px whitesmoke;
+}
+#main {
+  background-color: rgb(1, 202, 209);
+  margin: 20px 10px 20px 10px;
+  border-radius: 10px;
+}
+li {
+  margin: 16px 0px;
+  margin-left: 60px;
+  text-align: left;
+}
+h3 {
+  text-shadow: 5px 5px 7px whitesmoke;
+  margin: 20px 0px;
+}
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
+hr {
+  height: 7px;
+  background-color: purple;
+  border: 2px solid yellow;
+  border-radius: 5px;
+}
+ 

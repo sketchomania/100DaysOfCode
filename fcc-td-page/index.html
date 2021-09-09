@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Julia Documentation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Julia Documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Julia_in_a_Nutshell"
+            >Julia in a Nutshell</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#What_you_should_already_know"
+            >What you should already know</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#The_Julia_Programming_Language"
+            >The Julia Programming Language</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Characters">Characters</a></li>
+        <li><a class="nav-link" href="#String_Basics">String Basics</a></li>
+        <li><a class="nav-link" href="#Concatenation">Concatenation</a></li>
+        <li><a class="nav-link" href="#Functions">Functions</a></li>
+        <li><a class="nav-link" href="#Control_Flow">Control Flow</a></li>
+        <li>
+          <a class="nav-link" href="#Scope_of_Variables">Scope of Variables</a>
+        </li>
+        <li><a class="nav-link" href="#Constants">Constants</a></li>
+        <li><a class="nav-link" href="#Constructors">Constructors</a></li>
+        <li>
+          <a class="nav-link" href="#Command-line_Options"
+            >Command-line Options</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Julia_in_a_Nutshell">
+        <header>Julia in a Nutshell</header>
+        <article>
+          <p>
+            Julia is a high-level, high-performance, dynamic programming
+            language. While it is a general-purpose language and can be used to
+            write any application, many of its features are well suited for
+            numerical analysis and computational science.
+            <a
+              href="https://en.wikipedia.org/wiki/Julia_(programming_language)"
+              target="_blank"
+              >Wikipedia</a
+            >
+          </p>
+          <h3>Fast</h3>
+          <p>
+            Julia was designed from the beginning for high performance. Julia
+            programs compile to efficient native code for multiple platforms via
+            LLVM.
+          </p>
+          <h3>Dynamic</h3>
+          <p>
+            Julia is dynamically typed, feels like a scripting language, and has
+            good support for interactive use.
+          </p>
+          <h3>Reproducible</h3>
+          <p>
+            Reproducible environments make it possible to recreate the same
+            Julia environment every time, across platforms, with pre-built
+            binaries.
+          </p>
+          <h3>General</h3>
+          <p>
+            Julia provides asynchronous I/O, metaprogramming, debugging,
+            logging, profiling, a package manager, and more. One can build
+            entire Applications and Microservices in Julia.
+          </p>
+          <h3>Open source</h3>
+          <p>
+            Julia is an open source project with over 1,000 contributors. It is
+            made available under the MIT license. The source code is available
+            on GitHub.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            Julia aims to create an unprecedented combination of ease-of-use,
+            power, and efficiency in a single language. In addition to the
+            above, some advantages of Julia over comparable systems include:
+          </p>
+          <ul>
+            <li>User-defined types are as fast and compact as built-ins</li>
+            <li>
+              No need to vectorize code for performance; devectorized code is
+              fast
+            </li>
+            <li>Designed for parallelism and distributed computation</li>
+            <li>Lightweight "green" threading (coroutines)</li>
+            <li>Unobtrusive yet powerful type system</li>
+            <li>
+              Elegant and extensible conversions and promotions for numeric and
+              other types
+            </li>
+            <li>
+              Efficient support for Unicode, including but not limited to UTF-8
+            </li>
+            <li>
+              Powerful shell-like capabilities for managing other processes
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="What_you_should_already_know">
+        <header>
+          What you should already know
+        </header>
+        <article>
+          <p>This guide assumes you have the following basic background:</p>
+          <ol>
+            <li>A general understanding of the high level language.</li>
+            <li>Good working knowledge of high level lanuages</li>
+            <li>
+              Some programming experience. If you are new to programming, try
+              one of the tutorials linked on the main page about Julia.
+            </li>
+          </ol>
+        </article>
+      </section>
+      <section class="main-section" id="The_Julia_Programming_Language">
+        <header>
+          The Julia Programming Language
+        </header>
+        <article>
+          <ul>
+            <li>
+              Julia has foreign function interfaces for C, Fortran, C++, Python,
+              R, Java, and many other languages. Julia can also be embedded in
+              other programs through its embedding API. Specifically, Python
+              programs can call Julia using PyJulia.
+              <a href="https://julialang.org/" target="_blank">Official Page</a>
+            </li>
+            <li>
+              Julia is a high-level, high-performance, dynamic programming
+              language. While it is a general-purpose language and can be used
+              to write any application, many of its features are well suited for
+              numerical analysis and computational science.
+              <a
+                href="https://en.wikipedia.org/wiki/Julia_(programming_language)"
+                target="_blank"
+                >Wikipedia</a
+              >
+            </li>
+            <li>
+              To read the whole documentation <a href="https://docs.julialang.org/en/v1/" target="_blank">Click Here!</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Hello_world">
+        <header>Hello world</header>
+        <article>
+          <p>
+            To get started with writing Julia, open the Terminal or Notebook and
+            write your first "Hello world" Julia code:
+            <code>julia> str = "Hello, world.\n" "Hello, world.\n"</code>
+            Press enter to run the code.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+          <p>
+            A variable, in Julia, is a name associated (or bound) to a value.
+            It's useful when you want to store a value (that you obtained after
+            some math, for example) for later use. For example:
+            <code>
+              # Assign the value 10 to the variable x julia> x = 10 10 # Doing
+              math with x's value julia> x + 1 11 # Reassign x's value julia> x
+              = 1 + 1 2</code
+            >
+          </p>
+          <p>
+            Julia provides an extremely flexible system for naming variables.
+            Variable names are case-sensitive, and have no semantic meaning
+            (that is, the language will not treat variables differently based on
+            their names).
+            <code>
+              julia> x = 1.0 1.0 julia> y = -3 -3 julia> Z = "My string" "My
+              string" julia> customary_phrase = "Hello world!" "Hello world!"
+            </code>
+          </p>
+          <p>
+            Unicode names (in UTF-8 encoding) are allowed:
+            <code>
+              julia> δ = 0.00001 1.0e-5 julia> 안녕하세요 = "Hello"
+              "Hello"</code
+            >
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Characters">
+        <header>Characters</header>
+        <article>
+          <p>
+            A Char value represents a single character: it is just a 32-bit
+            primitive type with a special literal representation and appropriate
+            arithmetic behaviors, and which can be converted to a numeric value
+            representing a Unicode code point. (Julia packages may define other
+            subtypes of AbstractChar, e.g. to optimize operations for other text
+            encodings.)
+          </p>
+          <p>
+            Here is how Char values are input and shown:
+            <code
+              >julia> c = 'x' 'x': ASCII/Unicode U+0078 (category Ll: Letter,
+              lowercase) julia> typeof(c) Char</code
+            >
+          </p>
+          <p>
+            You can easily convert a Char to its integer value, i.e. code point:
+            <code>julia> c = Int('x') 120 julia> typeof(c) Int64</code>
+          </p>
+          <p>
+            You can do comparisons and a limited amount of arithmetic with Char
+            values:
+            <code
+              >julia> 'A' < 'a' true julia> 'A' <= 'a' <= 'Z' false julia> 'A'
+              <= 'X' <= 'Z' true julia> 'x' - 'a' 23 julia> 'A' + 1 'B':
+              ASCII/Unicode U+0042 (category Lu: Letter, uppercase)</code
+            >
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="String_Basics">
+        <header>String Basics</header>
+        <article>
+          <p>
+            String literals are delimited by double quotes or triple double
+            quotes:
+            <code
+              >julia> str = "Hello, world.\n" "Hello, world.\n" julia>
+              """Contains "quote" characters""" "Contains \"quote\"
+              characters"</code
+            >
+          </p>
+          <p>
+            Range indexing makes a copy of the selected part of the original
+            string. Alternatively, it is possible to create a view into a string
+            using the type SubString, for example:
+            <code
+              >julia> str = "long string" "long string" julia> substr =
+              SubString(str, 1, 4) "long" julia> typeof(substr)
+              SubString{String}</code
+            >
+            Several standard functions like chop, chomp or strip return a
+            SubString.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Concatenation">
+        <header>Concatenation</header>
+        <article>
+          <p>
+            One of the most common and useful string operations is
+            concatenation:
+            <code
+              >julia> greet = "Hello" "Hello" julia> whom = "world" "world"
+              julia> string(greet, ", ", whom, ".\n") "Hello, world.\n"</code
+            >
+          </p>
+          <p>
+            It's important to be aware of potentially dangerous situations such
+            as concatenation of invalid UTF-8 strings. The resulting string may
+            contain different characters than the input strings, and its number
+            of characters may be lower than sum of numbers of characters of the
+            concatenated strings, e.g.:
+            <code
+              >julia> a, b = "\xe2\x88", "\x80" ("\xe2\x88", "\x80") julia> c =
+              a*b "∀" julia> collect.([a, b, c]) 3-element
+              Array{Array{Char,1},1}: ['\xe2\x88'] ['\x80'] ['∀'] julia>
+              length.([a, b, c]) 3-element Array{Int64,1}: 1 1 1</code
+            >
+            This situation can happen only for invalid UTF-8 strings. For valid
+            UTF-8 strings concatenation preserves all characters in strings and
+            additivity of string lengths.
+          </p>
+          <p>
+            Julia also provides * for string concatenation:
+            <code>julia> greet * ", " * whom * ".\n" "Hello, world.\n"</code>
+            While * may seem like a surprising choice to users of languages that
+            provide + for string concatenation, this use of * has precedent in
+            mathematics, particularly in abstract algebra.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <article>
+          <p>
+            In Julia, a function is an object that maps a tuple of argument
+            values to a return value. Julia functions are not pure mathematical
+            functions, because they can alter and be affected by the global
+            state of the program. The basic syntax for defining functions in
+            Julia is:
+            <code
+              >julia> function f(x,y) x + y end f (generic function with 1
+              method)</code
+            >
+            This function accepts two arguments x and y and returns the value of
+            the last expression evaluated, which is x + y.
+          </p>
+          <p>
+            There is a second, more terse syntax for defining a function in
+            Julia. The traditional function declaration syntax demonstrated
+            above is equivalent to the following compact "assignment form":
+            <code
+              >julia> f(x,y) = x + y f (generic function with 1 method)</code
+            >
+          </p>
+          <p>
+            In the assignment form, the body of the function must be a single
+            expression, although it can be a compound expression (see Compound
+            Expressions). Short, simple function definitions are common in
+            Julia. The short function syntax is accordingly quite idiomatic,
+            considerably reducing both typing and visual noise.
+          </p>
+          <p>
+            A function is called using the traditional parenthesis syntax:
+            <code>julia> f(2,3) 5</code>
+          </p>
+          <p>
+            Without parentheses, the expression f refers to the function object,
+            and can be passed around like any other value:
+            <code>julia> g = f; julia> g(2,3) 5</code>
+          </p>
+          <p>
+            As with variables, Unicode can also be used for function names:
+            <code
+              >julia> ∑(x,y) = x + y ∑ (generic function with 1 method) julia>
+              ∑(2, 3) 5</code
+            >
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Control_Flow">
+        <header>Control Flow</header>
+        <article>
+          <p>Julia provides a variety of control flow constructs:</p>
+          <ul>
+            <li>Compound Expressions: begin and ;.</li>
+            <li>
+              Conditional Evaluation: if-elseif-else and ?: (ternary operator).
+            </li>
+            <li>
+              Short-Circuit Evaluation: logical operators && (“and”) and ||
+              (“or”), and also chained comparisons.
+            </li>
+            <li>Repeated Evaluation: Loops: while and for.</li>
+            <li>Exception Handling: try-catch, error and throw.</li>
+            <li>Tasks (aka Coroutines): yieldto.</li>
+          </ul>
+          <p>
+            The first five control flow mechanisms are standard to high-level
+            programming languages. Tasks are not so standard: they provide
+            non-local control flow, making it possible to switch between
+            temporarily-suspended computations. This is a powerful construct:
+            both exception handling and cooperative multitasking are implemented
+            in Julia using tasks. Everyday programming requires no direct usage
+            of tasks, but certain problems can be solved much more easily by
+            using tasks.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Scope_of_Variables">
+        <header>Scope of Variables</header>
+        <article>
+          <p>
+            The scope of a variable is the region of code within which a
+            variable is visible. Variable scoping helps avoid variable naming
+            conflicts. The concept is intuitive: two functions can both have
+            arguments called x without the two x's referring to the same thing.
+            Similarly, there are many other cases where different blocks of code
+            can use the same name without referring to the same thing. The rules
+            for when the same variable name does or doesn't refer to the same
+            thing are called scope rules; this section spells them out in
+            detail.
+          </p>
+          <p>
+            Certain constructs in the language introduce scope blocks, which are
+            regions of code that are eligible to be the scope of some set of
+            variables. The scope of a variable cannot be an arbitrary set of
+            source lines; instead, it will always line up with one of these
+            blocks. There are two main types of scopes in Julia, global scope
+            and local scope. The latter can be nested. There is also a
+            distinction in Julia between constructs which introduce a "hard
+            scope" and those which only introduce a "soft scope", which affects
+            whether shadowing a global variable by the same name is allowed or
+            not.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Constants">
+        <header>Constants</header>
+        <article>
+          <p>
+            A common use of variables is giving names to specific, unchanging
+            values. Such variables are only assigned once. This intent can be
+            conveyed to the compiler using the const keyword:
+            <code
+              >julia> const e = 2.71828182845904523536; julia> const pi =
+              3.14159265358979323846;</code
+            >
+          </p>
+          <p>
+            Multiple variables can be declared in a single const statement:
+            <code>julia> const a, b = 1, 2 (1, 2)</code>
+          </p>
+          <ul>
+            <li>
+              The const declaration should only be used in global scope on
+              globals. It is difficult for the compiler to optimize code
+              involving global variables, since their values (or even their
+              types) might change at almost any time. If a global variable will
+              not change, adding a const declaration solves this performance
+              problem.
+            </li>
+            <li>
+              Local constants are quite different. The compiler is able to
+              determine automatically when a local variable is constant, so
+              local constant declarations are not necessary, and in fact are
+              currently not supported.
+            </li>
+            <li>
+              Special top-level assignments, such as those performed by the
+              function and struct keywords, are constant by default.
+            </li>
+            <li>
+              Note that const only affects the variable binding; the variable
+              may be bound to a mutable object (such as an array), and that
+              object may still be modified. Additionally when one tries to
+              assign a value to a variable that is declared constant the
+              following scenarios are possible:
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Constructors">
+        <header>Constructors</header>
+        <article>
+          <p>
+            Constructors [1] are functions that create new objects –
+            specifically, instances of Composite Types. In Julia, type objects
+            also serve as constructor functions: they create new instances of
+            themselves when applied to an argument tuple as a function. This
+            much was already mentioned briefly when composite types were
+            introduced. For example:
+            <code
+              >julia> struct Foo bar baz end julia> foo = Foo(1, 2) Foo(1, 2)
+              julia> foo.bar 1 julia> foo.baz 2</code
+            >
+          </p>
+          <p>
+            For many types, forming new objects by binding their field values
+            together is all that is ever needed to create instances. However, in
+            some cases more functionality is required when creating composite
+            objects. Sometimes invariants must be enforced, either by checking
+            arguments or by transforming them. Recursive data structures,
+            especially those that may be self-referential, often cannot be
+            constructed cleanly without first being created in an incomplete
+            state and then altered programmatically to be made whole, as a
+            separate step from object creation. Sometimes, it's just convenient
+            to be able to construct objects with fewer or different types of
+            parameters than they have fields. Julia's system for object
+            construction addresses all of these cases and more.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Command-line_Options">
+        <header>Command-line Options</header>
+        <article>
+          <p>
+            The complete list of command-line switches available when launching
+            julia:
+          </p>
+          <p>
+            To know more about Command-line Options
+            <a
+              href="https://docs.julialang.org/en/v1/manual/command-line-options/#command-line-options" target="_blank"
+              >Click Here!</a
+            >
+          </p>
+          <p>
+            To read the whole documentation <a href="https://docs.julialang.org/en/v1/" target="_blank">Click Here!</a>
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

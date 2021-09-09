@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="header">
+        <div class="logo">
+          <img
+            id="header-img"
+            src="https://s3.amazonaws.com/freecodecamp/original_trombones.png"
+            alt="original trombones logo"
+          />
+        </div>
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+        <section id="hero">
+          <h2>Handcrafted, home-made masterpieces</h2>
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+            <input type="submit" value="Get Started" id="submit" class="btn" />
+          </form>
+        </section>
+        <div class="conatiner">
+          <section id="features">
+            <div class="grid">
+              <div class="icon">
+                <i
+                  ><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCnFkDY8qc5R3viQtfYYkLHq4PnxZT94Fg3g&usqp=CAU"
+                    alt="image"
+                /></i>
+              </div>
+              <div class="desc">
+                <h2>Premium Materials</h2>
+                <p>
+                  Our trombones use the shiniest brass which is sourced locally.
+                  This will increase the longevity of your purchase.
+                </p>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="icon">
+                <i
+                  ><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwmALuU19xPRQx_5_ZQK8QqG5HpA79AD5Iw&usqp=CAU"
+                    alt="image"
+                /></i>
+              </div>
+              <div class="desc">
+                <h2>Fast Shipping</h2>
+                <p>
+                  We make sure you recieve your trombone as soon as we have
+                  finished making it. We also provide free returns if you are
+                  not satisfied.
+                </p>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="icon">
+                <i
+                  ><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEuoOHR0vxJaKO_nh2boPzvJ4t9mO5XygVMQ&usqp=CAU"
+                    alt="image"
+                /></i>
+              </div>
+              <div class="desc">
+                <h2>Quality Assurance</h2>
+                <p>
+                  For every purchase you make, we will ensure there are no
+                  damages or faults and we will check and test the pitch of your
+                  instrument.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section id="how-it-works">
+            <iframe
+              id="video"
+              width="33%"
+              height="75%"
+              src="https://www.youtube.com/embed/cy_65o3gjE8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </section>
+          <section id="pricing">
+            <div class="product">
+              <div class="level">Product name</div>
+              <h2>$999</h2>
+              <ol>
+                <li>Product quality</li>
+                <li>Product available</li>
+                <li>Value for money</li>
+                <li>High quality</li>
+              </ol>
+              <button class="btn">Select</button>
+            </div>
+            <div class="product">
+              <div class="level">Product name</div>
+              <h2>$999</h2>
+              <ol>
+                <li>Product quality</li>
+                <li>Product available</li>
+                <li>Value for money</li>
+                <li>High quality</li>
+              </ol>
+              <button class="btn">Select</button>
+            </div>
+            <div class="product">
+              <div class="level">Product name</div>
+              <h2>$999</h2>
+              <ol>
+                <li>Product quality</li>
+                <li>Product available</li>
+                <li>Value for money</li>
+                <li>High quality</li>
+              </ol>
+              <button class="btn">Select</button>
+            </div>
+          </section>
+          <footer>
+            <ul>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <span>Copyright 2016, Original Trombones</span>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
