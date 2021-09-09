@@ -21,7 +21,10 @@
 
 # Overview
 
-|Day| Name | Project Link  | Source Code |
-|--|--|--|
-|(1 to 30)| JS30 | [project link](https://javascript30-by-vaibhav.netlify.app/) | [source code](https://github.com/sketchomania/JS30) |
+**List of all projects separately**
+
+(1 to 30). JS30
+- Links
+- [project link](https://javascript30-by-vaibhav.netlify.app/)
+- [source code](https://github.com/sketchomania/JS30) |
 
